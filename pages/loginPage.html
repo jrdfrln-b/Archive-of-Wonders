@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Library of Wonders - Login</title>
+        <link rel="stylesheet" href="/css/loginPage.css">
+    </head>
+    <body>
+        <div class="login-page">
+            <div class="form">
+                <div class="logo-container">
+                    <h2>"LOGO"</h2>
+                </div>
+                <form class="register-form">
+                    <h2>REGISTER</h2>
+                    <input type="text" placeholder="name"/>
+                    <input type="text" placeholder="email address"/>
+                    <input type="password" placeholder="password"/>
+                    <button>create</button>
+                    <p class="message">Already registered? <a href="#">Sign In</a></p>
+                </form>
+                <form class="login-form">
+                    <h2>LOGIN</h2>
+                    <input type="text" placeholder="username"/>
+                    <input type="password" placeholder="password"/>
+                    <button>login</button>
+                    <p class="message">Not registered? <a href="#">Create an account</a></p>
+                </form>
+                <div class="bottom-container bottom-items">
+                    <ul>
+                        <li class="bottom-links">
+                            <a href="termsPage.html">Terms</a>
+                        </li>
+                        <li class="bottom-links">
+                            <a href="privacyPage.html">Privacy</a>
+                        </li>
+                        <li class="bottom-links"> 
+                            <a href="securityPage.html">Security</a>
+                        </li>
+                        <p> | </p>
+                        <li class="bottom-links">
+                            <a href="contactPage.html">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+        <script type="text/javascript">
+            $('.message a').click(function(){
+                jQuery('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+            });
+        </script>
+        <script src="/js/darkMode.js"></script>
+        <script>
+            darkMode();
+            checkDarkModeCookie();
+        </script>
+    </body>
+</html>

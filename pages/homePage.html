@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Archive of Wonders</title>
+        <link rel="stylesheet" href="/css/homePage.css">
+    </head>
+    <body>
+        <header>
+            <nav id="nav-bar" >
+                <div>
+                    <a href="#"><img id="header-img" src="/images/Logo/Archieve of Wonders.png" alt="LOGO"></a>
+                </div>
+                <ul class="nav-list">
+                    <li class="list-item">
+                        <a href="/pages/galleryPage.html" class="nav-link">GALLERY</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="/pages/aboutPage.html" class="nav-link">ABOUT</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="/pages/coursesPage.html" class="nav-link">COURSES</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="/pages/contactPage.html" class="nav-link">CONTACT</a>
+                    </li>
+                </ul>
+                <div>
+                    <a id="login-nav" href="/pages/loginPage.html" class="nav-link">LOGIN</a>
+                </div>
+                <div class="switch">
+                    <input type="checkbox" id="mode-switch">
+                    <label for="mode-switch"></label>
+                </div>
+            </nav>
+        </header>
+        <section id="top-page">
+            <div id="top-page-info">
+                <div class="top-page-text">
+                <h2 class="AoW-text"><span class="auto-type"></span></h2>
+                </div>
+            </div>
+            <a href="/pages/museum.html" id="enterMuseum-btn">VIEW THE 3D MUSEUM</a>
+        </section>
+        <section id="second-page">
+            <div>
+                
+            </div>
+        </section>
+        <hr>
+        <footer id="">
+
+        </footer>
+        <script src="/js/darkMode.js"></script>
+        <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+        <script>
+            darkMode();
+            checkDarkModeCookie();
+            var typed = new Typed(".auto-type", {
+                strings: ["ARCHIVE OF WONDERS"],
+                typeSpeed: 100,
+                loop: false
+            });
+        </script>
+    </body>
+</html>
